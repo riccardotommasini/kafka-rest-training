@@ -1,19 +1,19 @@
 package it.polimi.deib.middleware.rest.solutions.resources.serizalization;
 
-import it.polimi.deib.middleware.rest.solutions.resources.Payment;
+import it.polimi.deib.middleware.rest.solutions.resources.Resource;
 import org.apache.kafka.common.serialization.Serializer;
 import org.codehaus.jackson.map.ObjectMapper;
 
 import java.util.Map;
 
-public class PaymentSerializer implements Serializer<Payment> {
+public class ResourceSerializer implements Serializer<Resource> {
     @Override
     public void configure(Map configs, boolean isKey) {
 
     }
 
     @Override
-    public byte[] serialize(String topic, Payment data) {
+    public byte[] serialize(String topic, Resource data) {
         byte[] retVal = null;
         ObjectMapper objectMapper = new ObjectMapper();
         try {

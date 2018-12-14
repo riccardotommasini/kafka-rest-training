@@ -1,28 +1,28 @@
 package it.polimi.deib.middleware.rest.solutions.resources.serizalization;
 
-import it.polimi.deib.middleware.rest.solutions.resources.Order;
+import it.polimi.deib.middleware.rest.solutions.resources.Resource;
 import org.apache.kafka.common.serialization.Deserializer;
 import org.codehaus.jackson.map.ObjectMapper;
 
 import java.util.Map;
 
-public class OrderDeserializer implements Deserializer<Order> {
+public class ResourceDeserializer implements Deserializer<Resource> {
     @Override
     public void configure(Map configs, boolean isKey) {
 
     }
 
     @Override
-    public Order deserialize(String topic, byte[] data) {
+    public Resource deserialize(String topic, byte[] data) {
         ObjectMapper mapper = new ObjectMapper();
-        Order order = null;
+        Resource request = null;
         try {
-            order = mapper.readValue(data, Order.class);
+            request = mapper.readValue(data, Resource.class);
         } catch (Exception e) {
 
             e.printStackTrace();
         }
-        return order;
+        return request;
     }
 
     @Override

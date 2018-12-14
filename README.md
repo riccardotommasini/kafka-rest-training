@@ -3,7 +3,7 @@
 This repository contains the examples used in class
 as well as some relevant tutorials found on-line
 
-In order to avoid confusion, one repository is maintained and 
+In request to avoid confusion, one repository is maintained and 
 branches are used to distinguishes different projects.
 
 Master will always refer to an empty project
@@ -31,7 +31,7 @@ curl -X POST \
     "status": 201,
     "message": "Order Created with id [86f1d9f3]"
 }
--- Changing the order -   NOT! Idempotent 
+-- Changing the request -   NOT! Idempotent 
 
 curl -X PUT \
   http://localhost:4567/api/orders/86f1d9f3 \
@@ -53,7 +53,7 @@ curl -X POST \
 
 {
     "status": 201,
-    "message": "Payment received for order id [69514c18]"
+    "message": "Payment received for request id [69514c18]"
 }
 -- Deleting
 
