@@ -1,23 +1,23 @@
-package it.polimi.deib.middleware.rest.solutions.resources.serizalization;
+package it.polimi.deib.middleware.rest.commons.resources.serizalization;
 
-import it.polimi.deib.middleware.rest.solutions.resources.Payment;
+import it.polimi.deib.middleware.rest.commons.resources.Order;
 import org.apache.kafka.common.serialization.Deserializer;
 import org.codehaus.jackson.map.ObjectMapper;
 
 import java.util.Map;
 
-public class PaymentDeserializer implements Deserializer<Payment> {
+public class OrderDeserializer implements Deserializer<Order> {
     @Override
     public void configure(Map configs, boolean isKey) {
 
     }
 
     @Override
-    public Payment deserialize(String topic, byte[] data) {
+    public Order deserialize(String topic, byte[] data) {
         ObjectMapper mapper = new ObjectMapper();
-        Payment order = null;
+        Order order = null;
         try {
-            order = mapper.readValue(data, Payment.class);
+            order = mapper.readValue(data, Order.class);
         } catch (Exception e) {
 
             e.printStackTrace();

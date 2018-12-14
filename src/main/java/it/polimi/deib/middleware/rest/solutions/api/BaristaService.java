@@ -1,6 +1,6 @@
 package it.polimi.deib.middleware.rest.solutions.api;
 
-import it.polimi.deib.middleware.rest.solutions.dao.Barista;
+import it.polimi.deib.middleware.rest.partials.dao.BaristaP;
 import org.slf4j.LoggerFactory;
 
 import static spark.Spark.init;
@@ -13,7 +13,7 @@ public class BaristaService extends AbstractService {
 
         logger = LoggerFactory.getLogger(BaristaService.class);
         port(4040);
-        webSocket("/barista", Barista.class);
+        webSocket("/barista", BaristaP.class);
         init();
     }
 }

@@ -1,7 +1,7 @@
 package it.polimi.deib.middleware.rest.solutions.dao;
 
-import it.polimi.deib.middleware.rest.solutions.resources.Order;
-import it.polimi.deib.middleware.rest.solutions.resources.serizalization.OderSerializer;
+import it.polimi.deib.middleware.rest.commons.resources.Order;
+import it.polimi.deib.middleware.rest.commons.resources.serizalization.OderSerializer;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.clients.producer.ProducerRecord;

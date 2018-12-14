@@ -1,10 +1,10 @@
 package it.polimi.deib.middleware.rest.solutions.dao;
 
-import it.polimi.deib.middleware.rest.solutions.MissingOrderException;
-import it.polimi.deib.middleware.rest.solutions.resources.Order;
-import it.polimi.deib.middleware.rest.solutions.resources.Payment;
-import it.polimi.deib.middleware.rest.solutions.resources.serizalization.OrderDeserializer;
-import it.polimi.deib.middleware.rest.solutions.resources.serizalization.PaymentSerializer;
+import it.polimi.deib.middleware.rest.commons.MissingOrderException;
+import it.polimi.deib.middleware.rest.commons.resources.Order;
+import it.polimi.deib.middleware.rest.commons.resources.Payment;
+import it.polimi.deib.middleware.rest.commons.resources.serizalization.OrderDeserializer;
+import it.polimi.deib.middleware.rest.commons.resources.serizalization.PaymentSerializer;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;

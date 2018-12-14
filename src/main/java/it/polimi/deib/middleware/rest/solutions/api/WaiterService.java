@@ -1,20 +1,20 @@
 package it.polimi.deib.middleware.rest.solutions.api;
 
-import it.polimi.deib.middleware.rest.solutions.Resp;
-import it.polimi.deib.middleware.rest.solutions.dao.Waiter;
-import it.polimi.deib.middleware.rest.solutions.resources.Order;
+import it.polimi.deib.middleware.rest.commons.Resp;
+import it.polimi.deib.middleware.rest.partials.dao.WaiterP;
+import it.polimi.deib.middleware.rest.commons.resources.Order;
 import org.slf4j.LoggerFactory;
 
 import static spark.Spark.*;
 
 public class WaiterService extends AbstractService {
-    static Waiter waiter = new Waiter();
+    static WaiterP waiter = new WaiterP();
 
     public static void main(String[] args) {
         logger = LoggerFactory.getLogger(WaiterService.class);
         port(4242);
         path("/waiter", () -> {
-            before("/*", (q, a) -> logger.info("Waiter Received api call"));
+            before("/*", (q, a) -> logger.info("WaiterStub Received api call"));
             path("/orders", () -> {
                 post("", (request, response) -> {
                     response.type("application/json");

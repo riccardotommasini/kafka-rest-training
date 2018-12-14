@@ -1,8 +1,8 @@
 package it.polimi.deib.middleware.rest.solutions.dao;
 
 import com.google.gson.Gson;
-import it.polimi.deib.middleware.rest.solutions.resources.Payment;
-import it.polimi.deib.middleware.rest.solutions.resources.serizalization.PaymentDeserializer;
+import it.polimi.deib.middleware.rest.commons.resources.Payment;
+import it.polimi.deib.middleware.rest.commons.resources.serizalization.PaymentDeserializer;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;

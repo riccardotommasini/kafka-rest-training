@@ -1,4 +1,4 @@
-package it.polimi.deib.middleware.rest.solutions;
+package it.polimi.deib.middleware.rest.commons;
 
 import com.google.gson.JsonElement;
 

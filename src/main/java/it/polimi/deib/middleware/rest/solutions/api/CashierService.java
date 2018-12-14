@@ -1,9 +1,9 @@
 package it.polimi.deib.middleware.rest.solutions.api;
 
-import it.polimi.deib.middleware.rest.solutions.Resp;
+import it.polimi.deib.middleware.rest.commons.Resp;
+import it.polimi.deib.middleware.rest.commons.MissingOrderException;
 import it.polimi.deib.middleware.rest.solutions.dao.Cashier;
-import it.polimi.deib.middleware.rest.solutions.MissingOrderException;
-import it.polimi.deib.middleware.rest.solutions.resources.Payment;
+import it.polimi.deib.middleware.rest.commons.resources.Payment;
 import org.slf4j.LoggerFactory;
 
 import static spark.Spark.*;
