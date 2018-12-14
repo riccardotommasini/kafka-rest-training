@@ -11,6 +11,8 @@ Master will always refer to an empty project
 Students are welcome to open pull-requests and issues
 to improve the material.
 
+https://join.slack.com/t/deib/shared_invite/enQtMjg1NTU5MDg2NzIxLWIxNGY1Y2NhZWI4ZmFhMDgwYTZkZDBhOThmMGRiOTE5MjBkMTM5MWIyNzU0ZmFlMDczMzZhMWFhYzM5MWY5N2Q
+
 
 ## Projects
 
