@@ -1,6 +1,6 @@
-package it.polimi.deib.middleware.rest.solutions.resources.serizalization;
+package it.polimi.deib.middleware.rest.commons.resources.serizalization;
 
-import it.polimi.deib.middleware.rest.solutions.resources.Resource;
+import it.polimi.deib.middleware.rest.commons.resources.Resource;
 import org.apache.kafka.common.serialization.Serializer;
 import org.codehaus.jackson.map.ObjectMapper;
 

@@ -2,8 +2,8 @@ package it.polimi.deib.middleware.rest.solutions.producer;
 
 import it.polimi.deib.middleware.rest.commons.AbstractService;
 import it.polimi.deib.middleware.rest.commons.Resp;
-import it.polimi.deib.middleware.rest.solutions.resources.Resource;
-import it.polimi.deib.middleware.rest.solutions.resources.serizalization.ResourceSerializer;
+import it.polimi.deib.middleware.rest.commons.resources.Resource;
+import it.polimi.deib.middleware.rest.commons.resources.serizalization.ResourceSerializer;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.clients.producer.ProducerRecord;

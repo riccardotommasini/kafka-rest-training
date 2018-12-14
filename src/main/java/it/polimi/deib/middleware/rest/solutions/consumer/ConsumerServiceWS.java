@@ -1,8 +1,8 @@
 package it.polimi.deib.middleware.rest.solutions.consumer;
 
 import it.polimi.deib.middleware.rest.commons.AbstractService;
-import it.polimi.deib.middleware.rest.solutions.resources.Resource;
-import it.polimi.deib.middleware.rest.solutions.resources.serizalization.ResourceDeserializer;
+import it.polimi.deib.middleware.rest.commons.resources.Resource;
+import it.polimi.deib.middleware.rest.commons.resources.serizalization.ResourceDeserializer;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
@@ -21,13 +21,13 @@ import java.util.*;
 
 import static spark.Spark.*;
 
-public class BaristaServiceWS extends AbstractService {
+public class ConsumerServiceWS extends AbstractService {
 
     private static KafkaConsumer<String, Resource> consumer;
 
     public static void main(String[] args) {
 
-        logger = LoggerFactory.getLogger(BaristaServiceWS.class);
+        logger = LoggerFactory.getLogger(ConsumerServiceWS.class);
 
         Properties props = new Properties();
 

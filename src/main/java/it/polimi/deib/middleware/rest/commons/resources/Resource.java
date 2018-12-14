@@ -1,4 +1,4 @@
-package it.polimi.deib.middleware.rest.solutions.resources;
+package it.polimi.deib.middleware.rest.commons.resources;
 
 
 import java.util.List;
